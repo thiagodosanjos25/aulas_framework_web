@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent implements OnInit {
-public contador = 0;
+
+  public contador = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  contarClick(){
-    this.contador = this.contador +1;
+  contarClick() {
+    this.contador = this.contador+1;
   }
-
 }

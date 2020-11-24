@@ -5,16 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { ContadorComponent } from './contador/contador.component';
+import { CardComponent } from './card/card.component';
+import { FormReativoComponent } from './form-reativo/form-reativo.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RodapeComponent,
-    ContadorComponent
+    ContadorComponent,
+    CardComponent,
+    FormReativoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
