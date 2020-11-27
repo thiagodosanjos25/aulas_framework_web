@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  public usuario = "Dayvison Santos";
+  public usuario = "Thiago dos anjos";
 
   public exibe = false;
 

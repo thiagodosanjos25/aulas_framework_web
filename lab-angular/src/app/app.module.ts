@@ -7,9 +7,10 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { ContadorComponent } from './contador/contador.component';
 import { CardComponent } from './card/card.component';
 import { FormReativoComponent } from './form-reativo/form-reativo.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule} from '@angular/forms' 
+import { HttpClientModule } from '@angular/common/http';
+import { FormcontatoComponent } from './formcontato/formcontato.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,15 @@ import { FormsModule } from '@angular/forms';
     RodapeComponent,
     ContadorComponent,
     CardComponent,
-    FormReativoComponent
+    FormReativoComponent,
+    FormcontatoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

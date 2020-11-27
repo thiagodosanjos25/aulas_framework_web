@@ -17,7 +17,7 @@ con.connect((err) => {
     console.log('Conexão realizada!')
 })
 
-const agendamento = {nome:'Dayvison Santos', email: 'fujimail@uol.com.br', ativo:0 }
+const agendamento = {nome:'Thiago dos anjos', email: 'fujimail@uol.com.br', ativo:0 }
 /*
 con.query('INSERT INTO agendamento SET ? ', agendamento, (err,rows) => {
     if(err) throw err
@@ -25,7 +25,7 @@ con.query('INSERT INTO agendamento SET ? ', agendamento, (err,rows) => {
 })
 */
 /*atualizar */
-con.query('UPDATE agendamento SET nome = ?, email = ? where ID = ? ', ['Tiago','dayvisons@gmail.com','1'], (err,rows) => {
+con.query('UPDATE agendamento SET nome = ?, email = ? where ID = ? ', ['Tiago','thiago@gmail.com','1'], (err,rows) => {
     if(err) throw err
     console.log("Registro Atualizado com sucesso");
 })
